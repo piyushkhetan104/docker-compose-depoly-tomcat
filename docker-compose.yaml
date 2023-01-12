@@ -1,0 +1,9 @@
+version: "3"
+services:
+ webservices:
+   image: 'tomcat:9'
+   ports:
+   - "8090:8080"
+   volumes:
+   - "/root/.jenkins/workspace/docker-compose/project/game-of-life/gameoflife-web/target/:/usr/local/tomcat/webapps"
+
